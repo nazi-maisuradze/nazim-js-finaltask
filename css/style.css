@@ -1,0 +1,392 @@
+.header {
+    height: 4.1rem;
+    display: flex;
+    width: 100%;
+    position: relative;
+    z-index: 100;
+}
+.header-cont {
+    max-width: 100rem;
+    width: 100%;
+    height: 5.3rem;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: gold;
+}
+
+.logo {
+    margin-left: 4rem;
+    max-width: 13rem;
+}
+.ul {
+    display: flex;
+    width: 20,5rem;
+    height: 1.25rem;
+}
+
+.navclass {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.li {
+    width: 7rem;
+    height: 1.25rem;
+    font-weight: 500;
+    font-size: 1rem;
+    letter-spacing: 0,1px;
+    text-align: center;
+    margin-right: 3rem;
+}
+.li-a {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #251b0b;
+} 
+
+.button1 {
+    background-color: #b6983c;
+    width: 6,25rem;
+    height: 3rem;
+    border-radius: 1rem;
+    padding: 1rem ;
+    text-align: center;
+    margin-right: 2rem;
+}
+.button-p {
+    text-transform: uppercase;
+    font-weight: bold;
+ }
+ .burgerclass {
+    position:absolute;
+    display: none;
+}
+.span {
+    display: block;
+    width: 2rem;
+    height: 3px;
+    margin: 2px auto;
+    background: black;
+}
+
+
+
+                          /* accordion         */
+
+
+.accordion-wrapper {
+    max-width: 100rem;
+    width: 100%;
+    height: 25rem;
+    background-color: #EB662B0D ;
+    margin-top: 1.8rem;
+}
+.accordion-body{
+    max-width: 50rem;
+    width: 100%;
+}
+.accordion-h3 {
+    position: relative;
+}
+.accordion-h3::before{
+    content: "+";
+    position: absolute;
+    top: 50%;
+    right: 1.2rem;
+    transform: translateY(-50%);
+}
+.accordion1 {
+    border: 0.2rem solid  rgba(153, 7, 7, 0.051);
+    margin-bottom: 0.5rem;
+    margin-left: 2rem;
+    padding: 1rem;
+
+}
+.accordion-p{
+    height: 0;
+    overflow: hidden;
+    width: 100%;
+    transition: all 3s;
+}
+.accordion1.active .accordion-p{
+    height: 5rem;
+    width: 100%;
+}
+.accordion1.active .accordion-h3::before {
+    content: "-";
+}
+.accordion1.active .accordion-h3{
+    height: 4rem;
+    font-weight: 100;
+    font-size: 40px;   
+    color: #252113;
+    text-align: center;
+    word-spacing: 1rem;
+    row-gap: 2rem;
+}
+.accordion-h2 {
+    font-weight: 900;
+    font-size: 1.5rem;
+    line-height: 1%;
+    margin: 0 25rem 3rem;
+}
+
+                  /* get info from server */
+
+/* .otherWinnersSection{
+    display:flex;
+} */
+.otherWinnersDiv {
+    max-width: 100rem;
+    width: 100%;
+    background-color:antiquewhite ;
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 100px;
+    margin-top: 50px;  
+}   
+.listUsers {
+    text-align: center;
+    width: 18.6rem;
+    height: 13rem;
+    flex-direction: row;
+}
+
+
+
+
+
+
+                                /* -----------------  fetch    --------------- */
+
+
+.fetch-box{
+    max-width: 100rem;
+    width: 100%;
+    background-color: #EB662B0D ;
+    margin-top: 1.8rem;
+    display: flex;
+    margin: 0 auto ;
+}
+.three-box-wrapp {
+    width: 75rem;
+    margin: 0 auto ;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.team {
+    text-align: center;
+    max-width: 55rem;
+}
+.team-h5{
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 1.3rem;
+    color: #37393F;
+    margin-bottom: 2rem;
+}
+.team-h3 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 3rem;
+    color: #37393F;
+    margin-bottom: 2.5rem;
+}
+
+.three-box {
+    width: 76rem;
+    display: flex;
+    column-gap: 1.8rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.image-div {
+    position: relative;
+}
+.image-div-txt {
+    width: 13rem;
+    height: 5rem;
+    position: absolute;
+    background-color: #FFFFFF;
+    top: 15rem;
+    left: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.winnerName {
+    font-weight: 600;
+    font-size: 1.3rem;
+    line-height: 2.1rem;
+    color: #37393F;
+    margin-bottom: 4px;
+}
+.winnerText {
+    font-weight: 400;
+    font-size: 1.1rem;
+    line-height: 24.33px;
+    color: #7D7D7D;
+}    
+.winnerImg {
+    max-width: 25rem;
+    width: 100%;
+    height: 20rem;
+    position: relative
+}    
+.otherWinners {
+    margin-top: 2rem;
+} 
+                   
+
+                                        /* -----   swiper  ------ */
+
+
+.swiperSection{
+    max-width: 100rem;
+    width: 100%;
+    height: 50rem;
+    background-color: #EB662B0D ;
+    margin-top: 1.8rem;
+}
+.swiper {
+  width: 55rem;
+  height: 45rem;
+}
+.parfumePhoto{
+    max-width: 30rem; 
+    width: 100%;
+    margin: auto;
+    display: block;
+}  
+
+.parfumeTitle { 
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 3rem;
+    color: #37393F;
+    margin: 2rem 0 2.5rem;
+} 
+.parfumeText{
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1.1rem;
+    color: #37393F;
+    margin-bottom: 2rem;
+    text-align: center;
+    margin: 3rem;
+}
+.swiper-slide{
+    justify-content: center;
+    align-items: center;
+}
+                              
+                       /* form validastion */
+
+.form-validation {
+    max-width: 100rem;
+    width: 100%;
+    height: 30rem;
+    background-color: #EB662B0D ;
+    margin-top: 1rem;
+}
+#form{
+    width: 30rem;
+    height: 30rem;
+    margin: 2rem auto 0 auto;
+    padding: 3.1rem;
+    background-color: antiquewhite;
+    border-radius: 0.7rem;
+    font-size: 1.1rem;
+    text-align: center;
+}
+#form button {
+    padding: 1rem;
+    margin-top: 2.2rem;
+    width: 100%;
+    color: rgb(42, 7, 7);
+    background-color: gold;
+    font-size: 1.2rem;
+    border-radius: 0.4rem;
+}
+#form h3 {
+    font-size: 2.2rem;
+    margin-bottom: 2;
+}
+.input{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5rem;
+}
+.input input {
+    border: 2px solid gold;
+    display: block;
+   padding: 0.4rem;
+   width: 100%;
+}
+.input.success input{
+    border-color: aquamarine;
+}
+.input.error input{
+    border-color: rgb(119, 12, 12);
+}
+
+
+
+                /* filter */
+.filterSection{
+    max-width: 100rem;
+    width: 100%;
+    height: 17rem;
+    background-color: #EB662B0D ;
+}
+.filter{
+    max-width: 30rem;
+    width: 100%;
+    height: 15rem;
+    margin: 0.4rem auto ;
+    padding: 2.1rem;
+    background-color: antiquewhite;
+    border-radius: 0.7rem;
+    text-align: center;
+}
+.filterH2{
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: rgb(249, 199, 133);
+}
+.filterUl{
+    font-size:1rem;
+    margin: 0.7rem;
+    color: rgb(238, 210, 174);
+}
+.filterUl li.hide {
+    display: none;
+}
+
+
+
+        /* scroll to top */
+
+#scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 1.2rem;
+    right: 1.2rem;
+    background-color: gold;
+    color: #fff;
+    border-radius: 1.5rem;
+    padding: 0.8rem;
+    cursor: pointer;
+}
+
+
