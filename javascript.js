@@ -23,8 +23,9 @@ for (let accordionItem of acordionElement) {
 }
 
 
-                  ///     fetch      - (get post delete methods)    - GET METHOD       
-                  
+                     ///     fetch      - (get post delete methods)    - GET METHOD     
+                       
+
  fetch("https://reqres.in/api/users?delay=3" , {
     method:"GET" , 
  })  
