@@ -136,23 +136,21 @@
 
                   /* get info from server */
 
-/* .otherWinnersSection{
-    display:flex;
-} */
+
 .otherWinnersDiv {
     max-width: 100rem;
     width: 100%;
     background-color:antiquewhite ;
-    display: flex;
-    /* justify-content: space-between; */
-    gap: 100px;
-    margin-top: 50px;  
+    flex-direction: column;
+    /* display: flex;
+    justify-content: space-between; */
 }   
 .listUsers {
-    text-align: center;
-    width: 18.6rem;
-    height: 13rem;
-    flex-direction: row;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    grid: 1rem;
+
 }
 
 

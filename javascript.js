@@ -41,6 +41,7 @@ for (let accordionItem of acordionElement) {
 
     responsejs.data.forEach(function(item) {
     let li = document.createElement("li");
+    li.classList.add("listUsers");
 
     let winnerinfoP = document.createElement("p");
     winnerinfoP.textContent = `${item.first_name} ${item.last_name}`;
@@ -175,7 +176,7 @@ input.addEventListener("keyup", function(element) {
 
 
 
-      //  scroll to top
+    //  scroll to top
 
 
       let scrollToTopBtn = document.getElementById("scrollToTopBtn");
@@ -192,6 +193,32 @@ input.addEventListener("keyup", function(element) {
           document.body.scrollTop = 0; 
           document.documentElement.scrollTop = 0; 
       }
+
+
+
+
+import {cookies} from  './cookies.js' ;
+
+cookies();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ axios.get("https://reqres.in/api/users?delay=3")
+.then(response => console.log(response.data.image))
+.catch(error => console.log(error))
 
 
 
@@ -239,6 +266,3 @@ input.addEventListener("keyup", function(element) {
 
 
 
-axios.get("https://reqres.in/api/users?delay=3")
-.then(response => console.log(response.data.image))
-.catch(error => console.log(error))
