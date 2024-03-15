@@ -176,49 +176,53 @@ input.addEventListener("keyup", function(element) {
 
 
 
-    //  scroll to top
-
-
-      let scrollToTopBtn = document.getElementById("scrollToTopBtn");
-
-      window.onscroll = function() {
-          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-              scrollToTopBtn.style.display = "block";
-          } else {
-              scrollToTopBtn.style.display = "none";
-          }
-      };
-
-      function scrollToTop() {
-          document.body.scrollTop = 0; 
-          document.documentElement.scrollTop = 0; 
-      }
-
-
-
-
 import {cookies} from  './cookies.js' ;
+import {headerBg} from  './cookies.js' ;
 
 cookies();
-
-
-
-
-
-
-
-
-
-
-
-
-
+headerBg();
 
 
 
  axios.get("https://reqres.in/api/users?delay=3")
 .then(response => console.log(response.data.image))
 .catch(error => console.log(error))
+
+
+    //  scroll to top
+
+
+    // export function scrollToTop(){
+    //   let scrollBtn = document.getElementById("scrollToTopBtn");
+    
+    //   scrollBtn.addEventListener("click", function() {
+    //     window.scrollTo( {
+    //       top:0,
+    //       behavior:'smooth',
+    //     });
+    //   });
+    // }
+    
+
+
+      // let scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+      // window.onscroll = function() {
+      //     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      //         scrollToTopBtn.style.display = "block";
+      //     } else {
+      //         scrollToTopBtn.style.display = "none";
+      //     }
+      // };
+
+      // function scrollToTop() {
+      //     document.body.scrollTop = 0; 
+      //     document.documentElement.scrollTop = 0; 
+      // }
+
+
+
+
 
 
 

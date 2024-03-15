@@ -21,13 +21,48 @@
 }
 
 
-
+@media (max-width:1024px){
+    .swiperSection{
+        max-width: 70rem;
+        width: 100%;
+    }
+    .swiper {
+        max-width: 50rem;
+        width: 100%;
+      }
+      .parfumePhoto{
+        max-width: 25rem; 
+        width: 100%;
+    } 
+    .parfumeText{
+        margin: 2rem;
+    } 
+    .parfumeTitle { 
+        text-align: center;
+        font-weight: 500;
+        font-size: 1.3rem;
+        margin: 2rem 0 ;
+    } 
+    .logo {
+        margin: 1.1rem ;
+        max-width: 10rem;
+    }
+    .li {
+        margin: 0.2rem 1rem;
+        align-items: center;
+        text-align: center;
+    } 
+    .cookie {
+        min-height: 3rem;
+      }
+}
 
 @media(max-width:720px){
     .burgerclass{
         display: block;
         padding-top: 2rem;
         padding-left: 1rem;
+        position: fixed;
     }
     .navclass{
         display: none;
@@ -70,4 +105,61 @@
         margin: 1.6rem ;
         max-width: 12rem;
     }
+    .accordion-h2 {
+        font-weight: 900;
+        font-size: 1.5rem;
+        line-height: 1%;
+        margin: 0 12rem 3rem;
+    }
+    .form-validation {
+        max-width: 70rem;
+        width: 100%;
+    }
+    #form{
+        width: 25rem;
+        height: 30rem;
+        margin: 2rem auto 0 auto;
+        padding: 2.8rem;
+        font-size: 1rem;
+    }
+    #form button {
+        width: 70%;
+    }
+    #cookie {
+        min-height: 2.5rem;
+      }
+     #cookie-btn{
+        margin-top: -0.7rem;
+      }
+}
+
+@media(max-width:480px){
+    .accordion-wrapper {
+        max-width: 60rem;
+        width: 100%;
+        background-color: #EB662B0D ;
+        margin-top: 1.8rem;   
+    }
+    .accordion-h2 {
+        font-weight: 900;
+        font-size: 1.5rem;
+        line-height: 1%;
+        margin: 0 10rem 3rem;
+    }
+    .form-validation {
+        max-width: 40rem;
+        width: 100%;
+    }
+    #form{
+        width: 18rem;
+        height: 30rem;
+        margin: 2rem auto 0 auto;
+        padding: 2.8rem;
+        font-size: 1rem;
+    }
+    #form button {
+        font-size: 1.1rem;
+        width: 50%;
+    }
+
 }
